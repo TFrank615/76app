@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTFD Admin Links</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome is no longer needed -->
+    <style>
+        /* Custom styles for a nice feel on mobile */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent; /* Removes blue tap highlight on mobile */
+        }
+        .icon-link {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .icon-link:active {
+            transform: scale(0.95); /* Adds a nice press-down effect */
+        }
+        .icon-link:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .icon-image {
+            width: 48px;  /* Custom icon size */
+            height: 48px;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: cover; /* Ensures your icon fits well */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-md p-8 space-y-8">
+        <!-- Profile Header -->
+        <div class="text-center">
+            <img src="logo.png" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+            <h1 class="text-3xl font-bold">HTFD Dashboard</h1>
+            <p class="text-gray-400 mt-2">Admin Links</p>
+        </div>
+
+        <!-- Icon Grid -->
+        <div class="grid grid-cols-3 gap-6 text-center">
+            
+            <!-- Icon 1: Website -->
+            <a href="https://tfrank615.github.io/76unitstatus" target="_blank" class="icon-link bg-gray-800 p-4 rounded-2xl shadow-md flex flex-col justify-center items-center h-28">
+                <img src="status.png" alt="Website Icon" class="icon-image rounded-full">
+                <span class="block mt-2 text-sm font-medium text-gray-300">Unit Status Update</span>
+            </a>
+
+            <!-- Icon 2: Twitter/X -->
+            <a href="https://tfrank615.github.io/76db/manualalert" target="_blank" class="icon-link bg-gray-800 p-4 rounded-2xl shadow-md flex flex-col justify-center items-center h-28">
+                <img src="alerts.png" alt="Twitter Icon" class="icon-image rounded-full">
+                <span class="block mt-2 text-sm font-medium text-gray-300">Alerts</span>
+            </a>
+
+            <!-- Icon 3: Ticker Feed Form -->
+            <a href="https://forms.gle/zdk2utTmWh8RyTjGA" target="_blank" class="icon-link bg-gray-800 p-4 rounded-2xl shadow-md flex flex-col justify-center items-center h-28">
+                <img src="alerts.png" alt="Twitter Icon" class="icon-image rounded-full">
+                <span class="block mt-2 text-sm font-medium text-gray-300">Ticker Feed</span>
+            </a>
+
+            <!-- Icon 4: News Feed Form -->
+            <a href="https://forms.gle/hhsESzDLMhqZeEqP9" target="_blank" class="icon-link bg-gray-800 p-4 rounded-2xl shadow-md flex flex-col justify-center items-center h-28">
+                <img src="news.png" alt="News Icon" class="icon-image rounded-full">
+                <span class="block mt-2 text-sm font-medium text-gray-300">News Feed</span>
+            </a>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
+
